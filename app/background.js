@@ -30,12 +30,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, callback) {
         callback(xhr.status);
       } else {
         callback("error (" + xhr.status + "): " + xhr.statusText);
-        return;
       }
-      response.json();
-    })
-    .then((data, e) => {
-      callback(200);
     })
     .catch((error) => {
       callback(error);
