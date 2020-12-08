@@ -93,7 +93,7 @@ function start() {
       var title = $(document).find("title").text();
       $.when.apply(undefined, promises).then(function () {
         var str =
-          "<html><head><meta http-equiv='Content-Type' content='text/html; charset=UTF-8' /></head><body><h3>" +
+          "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body><h3>" +
           title +
           "</h3>" +
           body.html() +

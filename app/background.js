@@ -25,7 +25,6 @@ chrome.runtime.onMessage.addListener(function (request, sender, callback) {
     body: JSON.stringify(request),
   })
     .then((xhr) => {
-      console.log(xhr);
       if (xhr.status === 200 || xhr.status === 208) {
         callback(xhr.status);
       } else {
